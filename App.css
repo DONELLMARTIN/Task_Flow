@@ -1,0 +1,160 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+  min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.25);
+}
+
+/* ===== FORM ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #38bdf8;
+}
+
+/* ===== BUTTON ===== */
+button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+}
+
+/* ===== TASK MANAGER ===== */
+
+.task-container {
+  width: 550px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #1e293b;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-item.done {
+  background: #064e3b;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+/* priority */
+.high { color: #ef4444; }
+.medium { color: #facc15; }
+.low { color: #22c55e; }
